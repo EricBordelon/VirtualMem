@@ -1,3 +1,4 @@
+//This is my current solution. Obviously it is still unfinished.
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -38,7 +39,7 @@ int main()
 	cout << endl;
 
 	//
-	//Open file and read bits into a
+	//Open file and read bits into 'a'
 	//Close file
 	//
 
@@ -80,7 +81,7 @@ int main()
 				//page frame has not yet been loaded
 				//open storage and read frame into memory
 
-				//don't forget to update frame!
+				//don't forget to update page table
 			}
 		
 		}
@@ -92,5 +93,6 @@ int main()
 		// to file
 	}
 
+	//I'll also need a TLB-hit rate counter and a page-fault counter
 	return 0;
 }
